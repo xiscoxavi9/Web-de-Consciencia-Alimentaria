@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centre de Nutrició 3r ESO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a class="logo" href="index.html">Centre Nutrició <span>3r ESO</span></a>
+      <div class="menu-toggle" aria-label="Obrir menú" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inici" class="active">Inici</a></li>
+          <li><a href="#nutrients">Sala de Nutrients</a></li>
+          <li><a href="#analisi">Sala d'Anàlisi</a></li>
+          <li><a href="#aliments">Sala d'Aliments</a></li>
+          <li><a href="#nutricionista">Sala del Nutricionista</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inici">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Centre de Nutrició <span>3r ESO</span></h1>
+        <p>Descobreix el món dels nutrients amb una experiència interactiva, dinàmica i pensada per al teu curs. Explora les nostres sales, mira vídeos, consulta taules comparatives i aprèn a cuidar-te cada dia.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#nutrients">Explora els nutrients</a>
+          <a class="btn btn-secondary" href="#analisi">Novetats aviat</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/af8eb305-96bf-4117-8b82-afb3e3a696d7.jpeg" alt="Assortiment d'aliments saludables i colorits">
+        <div class="floating-card">
+          <h4>Objectius del centre</h4>
+          <ul>
+            <li>Energia equilibrada</li>
+            <li>Cos actiu i fort</li>
+            <li>Ments concentrades</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-access" aria-label="Accés ràpid a les sales">
+      <div class="section-title">
+        <h2>Les nostres sales</h2>
+        <p>Tria on vols començar el teu viatge nutricional</p>
+      </div>
+      <div class="grid quick-grid">
+        <a class="card" href="#nutrients">
+          <span class="icon">🍽️</span>
+          <h3>Sala de Nutrients</h3>
+          <p>Aprèn tot sobre hidrats, lípids, proteïnes, vitamines, minerals i aigua amb recursos multimèdia.</p>
+        </a>
+        <a class="card" id="analisi" href="#analisi">
+          <span class="icon">📊</span>
+          <h3>Sala d'Anàlisi</h3>
+          <p>Comparatives d'aliments, gràfics i dades per entendre què menges cada dia.</p>
+          <div class="status">En construcció</div>
+        </a>
+        <a class="card" id="aliments" href="#aliments">
+          <span class="icon">🥑</span>
+          <h3>Sala d'Aliments</h3>
+          <p>Descobreix aliments estrella, propietats nutricionals i combinacions saludables.</p>
+          <div class="status">En construcció</div>
+        </a>
+        <a class="card" id="nutricionista" href="#nutricionista">
+          <span class="icon">🩺</span>
+          <h3>Sala del Nutricionista</h3>
+          <p>Consulta recursos del nostre expert i resol dubtes sobre alimentació equilibrada.</p>
+          <div class="status">En construcció</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="nutrients" class="nutrients-section" aria-label="Sala de nutrients">
+      <div class="section-title">
+        <h2>Els nutrients imprescindibles</h2>
+        <p>Entra a cada sala per aprofundir amb vídeos, taules i consells pràctics</p>
+      </div>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <a class="card nutrient-card" href="nutrients/hidrats.html">
+          <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/af8eb305-96bf-4117-8b82-afb3e3a696d7.jpeg" alt="Aliments rics en hidrats de carboni">
+          <div>
+            <span class="tag">Hidrats de carboni</span>
+            <h3>Energia immediata i sostinguda</h3>
+            <p>Descobreix la diferència entre glúcids simples i complexos i aprèn quins prioritzar.</p>
+          </div>
+        </a>
+        <a class="card nutrient-card" href="nutrients/lipids.html">
+          <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/0b86b3dc-15e7-45af-a9ea-6a0244752f9f.jpeg" alt="Aliments rics en greixos saludables">
+          <div>
+            <span class="tag">Lípids</span>
+            <h3>Protecció i energia concentrada</h3>
+            <p>Coneix les funcions dels greixos, els bons aliats i aquells que cal limitar.</p>
+          </div>
+        </a>
+        <a class="card nutrient-card" href="nutrients/proteines.html">
+          <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/2a1f6262-8257-4976-9d8e-7d98800a9060.jpeg" alt="Varietat d'aliments proteics">
+          <div>
+            <span class="tag">Proteïnes</span>
+            <h3>Els maons del teu cos</h3>
+            <p>Explora les funcions de les proteïnes, els aminoàcids i combina aliments intel·ligentment.</p>
+          </div>
+        </a>
+        <a class="card nutrient-card" href="nutrients/vitamines.html">
+          <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/02c45145-b777-4568-bb9b-362758fc303f.jpeg" alt="Fruites i verdures riques en vitamines">
+          <div>
+            <span class="tag">Vitamines</span>
+            <h3>Petites dosis, grans efectes</h3>
+            <p>Aprèn la diferència entre hidrosolubles i liposolubles i evita dèficits o excessos.</p>
+          </div>
+        </a>
+        <a class="card nutrient-card" href="nutrients/minerals.html">
+          <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/26df2902-4709-4842-ac25-664f912ca847.jpeg" alt="Varietat d'aliments rics en minerals">
+          <div>
+            <span class="tag">Minerals</span>
+            <h3>Construcció i equilibri</h3>
+            <p>Fes-te expert en les sals minerals clau i com contribueixen al teu organisme.</p>
+          </div>
+        </a>
+        <a class="card nutrient-card" href="nutrients/aigua.html">
+          <img src="https://cdn1.genspark.ai/user-upload-image/5_generated/967cf404-884b-4771-a7d4-674a3b653cdb.jpeg" alt="Gots d'aigua fresca">
+          <div>
+            <span class="tag">Aigua</span>
+            <h3>La base de la vida</h3>
+            <p>Mantén-te hidratat i descobreix perquè l'aigua és essencial per al teu rendiment.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="nutrients-section" aria-labelledby="analisi-title">
+      <div class="section-title">
+        <h2 id="analisi-title">Sala d'Anàlisi</h2>
+        <p>Proximament: estem preparant recursos interactius</p>
+      </div>
+      <div class="card placeholder">
+        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="Icona analítica">
+        <h3>Arribant aviat</h3>
+        <p>Proximament: Aquí podràs trobar comparatives i anàlisis detallades dels aliments que consumim cada dia.</p>
+        <div class="status">En construcció</div>
+      </div>
+    </section>
+
+    <section class="nutrients-section" aria-labelledby="aliments-title">
+      <div class="section-title">
+        <h2 id="aliments-title">Sala d'Aliments</h2>
+        <p>Proximament: històries de productes i receptes saludables</p>
+      </div>
+      <div class="card placeholder">
+        <img src="https://cdn-icons-png.flaticon.com/512/3480/3480520.png" alt="Icona d'aliment saludable">
+        <h3>Estem treballant-hi</h3>
+        <p>Proximament: Descobreix els aliments que hem estat analitzant i les seves propietats nutricionals.</p>
+        <div class="status">En construcció</div>
+      </div>
+    </section>
+
+    <section class="nutrients-section" aria-labelledby="nutricionista-title">
+      <div class="section-title">
+        <h2 id="nutricionista-title">Sala del Nutricionista</h2>
+        <p>Proximament: consells personalitzats amb el nostre expert</p>
+      </div>
+      <div class="card placeholder">
+        <img src="https://cdn-icons-png.flaticon.com/512/4326/4326895.png" alt="Icona de nutricionista">
+        <h3>Ben aviat</h3>
+        <p>Proximament: Consulta amb el nostre expert en nutrició i dietètica.</p>
+        <div class="status">En construcció</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 Centre de Nutrició 3r ESO · Projecte educatiu per a adolescents.</p>
+      <p>Contacte: <a href="mailto:info@nutrieso.cat">info@nutrieso.cat</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
