@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8dc"/>
+      <stop offset="100%" stop-color="#f2e6c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)" rx="64"/>
+  <rect x="80" y="80" width="1040" height="540" rx="48" fill="#ffffff" opacity="0.85" stroke="#ff8080" stroke-width="18"/>
+  <g font-family="'Poppins', sans-serif" font-weight="700" text-anchor="start" fill="#ff6666">
+    <text x="140" y="280" font-size="96">Milkybar</text>
+  </g>
+  <g font-family="'Poppins', sans-serif" font-weight="500" text-anchor="start" fill="#6b4c3b">
+    <text x="140" y="380" font-size="56">Tauleta de xocolata blanca</text>
+  </g>
+  <circle cx="990" cy="210" r="110" fill="#ff6666"/>
+  <text x="990" y="190" font-family="'Poppins', sans-serif" font-size="44" font-weight="700" fill="#fff8dc" text-anchor="middle">3r</text>
+  <text x="990" y="240" font-family="'Poppins', sans-serif" font-size="44" font-weight="700" fill="#fff8dc" text-anchor="middle">ESO</text>
+</svg>

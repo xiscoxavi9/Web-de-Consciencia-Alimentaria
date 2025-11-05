@@ -33,7 +33,17 @@
             </ul>
           </li>
           <li><a href="#analisi">Sala d'Anàlisi</a></li>
-          <li><a href="#aliments">Sala d'Aliments</a></li>
+          <li class="has-dropdown">
+            <a href="#aliments" aria-haspopup="true" aria-expanded="false">Sala d'Aliments</a>
+            <ul class="dropdown" aria-label="Submenú Sala d'Aliments">
+              <li><a href="#begudes-energetiques">Begudes energètiques</a></li>
+              <li><a href="#salses-tomati-ketchup">Salses de tomàtiga i quètxup</a></li>
+              <li><a href="#sucs-envasats">Sucs envasats</a></li>
+              <li><a href="#iogurts-postres">Iogurts i postres lactis</a></li>
+              <li><a href="#xocolates">Xocolates i cacau</a></li>
+              <li><a href="#conclusions-generals">Conclusions generals</a></li>
+            </ul>
+          </li>
           <li><a href="#nutricionista">Sala del Nutricionista</a></li>
         </ul>
       </nav>
@@ -80,11 +90,11 @@
           <p>Comparatives d'aliments, gràfics i dades per entendre què menges cada dia.</p>
           <div class="status">En construcció</div>
         </a>
-        <a class="card" id="aliments" href="#aliments">
+        <a class="card" id="aliments-card" href="#aliments">
           <span class="icon">🥑</span>
           <h3>Sala d'Aliments</h3>
-          <p>Descobreix aliments estrella, propietats nutricionals i combinacions saludables.</p>
-          <div class="status">En construcció</div>
+          <p>Analitza begudes, salses, sucs, iogurts i xocolates amb taules interactives i conclusions.</p>
+          <div class="status live">Nou!</div>
         </a>
         <a class="card" id="nutricionista" href="#nutricionista">
           <span class="icon">🩺</span>
@@ -165,17 +175,878 @@
       </div>
     </section>
 
-    <section class="nutrients-section" aria-labelledby="aliments-title">
+    <section id="aliments" class="nutrients-section" aria-labelledby="aliments-title">
       <div class="section-title">
         <h2 id="aliments-title">Sala d'Aliments</h2>
-        <p>Proximament: històries de productes i receptes saludables</p>
+        <p>Explora les nostres investigacions reals sobre productes comercials: ingredients, informació nutricional i conclusions.</p>
       </div>
-      <div class="card placeholder">
-        <img src="https://cdn-icons-png.flaticon.com/512/3480/3480520.png" alt="Icona d'aliment saludable">
-        <h3>Estem treballant-hi</h3>
-        <p>Proximament: Descobreix els aliments que hem estat analitzant i les seves propietats nutricionals.</p>
-        <div class="status">En construcció</div>
+
+      <div class="intro-grid">
+        <div class="highlight-box">
+          <h2>Metodologia del treball 📊</h2>
+          <ul>
+            <li>Analitzem etiquetes reals i comprovem si els ingredients són habituals a una cuina domèstica.</li>
+            <li>Comparem nutrients per 100 g/ml i per ració per entendre l'impacte real de consum.</li>
+            <li>Incloem preguntes guies per fomentar l'esperit crític i el consum responsable.</li>
+          </ul>
+        </div>
+        <div class="tip-box">
+          <h3>Com utilitzar la sala</h3>
+          <p>Fes servir el desplegable superior per saltar directament a cada categoria. A cada apartat trobaràs taules, mapes conceptuals i galeries d'imatges perquè puguis comparar de manera visual.</p>
+        </div>
       </div>
+
+      <article id="begudes-energetiques" class="food-category accent-energetic">
+        <header class="category-banner">
+          <div class="banner-copy">
+            <span class="eyebrow">Begudes energètiques ⚡️</span>
+            <h3>Un xut d'energia... o de sucre?</h3>
+            <p>Les begudes energètiques combinen sucre, cafeïna i additius que poden sobreestimular el sistema nerviós. Observa com canvien les quantitats segons la marca i pregunta't si realment les necessites.</p>
+            <ul class="key-points">
+              <li>Entre 11 i 16 cullerades de sucre per llauna gran.</li>
+              <li>Cafeïna equivalent a 2-3 tasses d'espresso en alguns formats.</li>
+              <li>Colorants i conservants que gairebé mai tenim a casa.</li>
+            </ul>
+          </div>
+        </header>
+        <div class="category-content">
+          <div class="table-wrapper">
+            <h4>Comparativa de la llista d'ingredients</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Producte</th>
+                  <th>Ingredients destacats</th>
+                  <th>Nombre d'ingredients</th>
+                  <th>Habituals a la cuina?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monster Mango Loco</td>
+                  <td>Aigua carbonatada, sucre, suc (5%), taurina, cafeïna, vitamines B, colorants i conservants (E202, E211).</td>
+                  <td>18</td>
+                  <td>Només el suc i el sucre; la resta són additius industrials.</td>
+                </tr>
+                <tr>
+                  <td>Red Bull Original</td>
+                  <td>Aigua carbonatada, sacarosa, glucosa, acidulants, taurina, cafeïna, niacina, colorant caramel.</td>
+                  <td>17</td>
+                  <td>No: la majoria són substàncies presents únicament en el laboratori.</td>
+                </tr>
+                <tr>
+                  <td>Burn Original</td>
+                  <td>Aigua, sucre, sucres afegits, cafeïna, guaranà, vitamines B, aromes i colorants artificials.</td>
+                  <td>16</td>
+                  <td>Parcialment; hi dominen estimulants i aromes artificials.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-wrapper">
+            <h4>Informació nutricional (per 100 ml)</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Producte</th>
+                  <th>Energia</th>
+                  <th>Sucre</th>
+                  <th>Cafeïna</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monster Mango Loco</td>
+                  <td>46 kcal</td>
+                  <td>11 g</td>
+                  <td>32 mg</td>
+                  <td>Porta taurina i vitamines B3, B5, B6 i B12.</td>
+                </tr>
+                <tr>
+                  <td>Red Bull Original</td>
+                  <td>45 kcal</td>
+                  <td>11 g</td>
+                  <td>32 mg</td>
+                  <td>Acidulant cítric i colorant caramel.</td>
+                </tr>
+                <tr>
+                  <td>Burn Original</td>
+                  <td>44 kcal</td>
+                  <td>11 g</td>
+                  <td>30 mg</td>
+                  <td>Inclou extractes de guaranà i ginseng.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-wrapper">
+            <h4>Càrrega per envàs complet</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Producte</th>
+                  <th>Format</th>
+                  <th>Calories totals</th>
+                  <th>Sucre total</th>
+                  <th>Cafeïna total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monster Mango Loco</td>
+                  <td>Llauna 500 ml</td>
+                  <td>230 kcal</td>
+                  <td>55 g (≈14 culleradetes)</td>
+                  <td>160 mg</td>
+                </tr>
+                <tr>
+                  <td>Red Bull Original</td>
+                  <td>Llauna 250 ml</td>
+                  <td>112 kcal</td>
+                  <td>27 g (≈7 culleradetes)</td>
+                  <td>80 mg</td>
+                </tr>
+                <tr>
+                  <td>Burn Original</td>
+                  <td>Llauna 250 ml</td>
+                  <td>110 kcal</td>
+                  <td>27 g (≈7 culleradetes)</td>
+                  <td>75 mg</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <details class="info-accordion">
+            <summary>Mapa conceptual complet de les begudes energètiques</summary>
+            <div class="concept-grid">
+              <div>
+                <h5>Components clau</h5>
+                <ul>
+                  <li>Sucre + edulcorants → Energia ràpida però baixada brusca.</li>
+                  <li>Cafeïna + taurina → Estimulació del sistema nerviós central.</li>
+                  <li>Additius (colorants, conservants) → Milloren aspecte i durabilitat.</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Impactes al cos</h5>
+                <ul>
+                  <li>Augment de la freqüència cardíaca i la pressió arterial.</li>
+                  <li>Possible deshidratació i alteració del son.</li>
+                  <li>Risc d'abús quan es combinen amb exercici intens o amb alcohol.</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Alternatives intel·ligents</h5>
+                <ul>
+                  <li>Aigua fresca + fruita → Hidratació i vitamines naturals.</li>
+                  <li>Fruita seca + iogurt → Energia sostinguda sense pics.</li>
+                  <li>Descans i planificació del son → Recuperació real.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <div class="reflection-box">
+            <h4>Preguntes per reflexionar</h4>
+            <ul>
+              <li>Quan necessites realment aquest plus d'energia? Podries obtenir-la d'una altra manera?</li>
+              <li>Com afecta el teu cos ingerir tanta cafeïna amb una sola beguda?</li>
+              <li>Quantes cullerades de sucre consumiries si prens dues llaunes en un dia?</li>
+            </ul>
+            <p class="conclusion">Conclusió: les begudes energètiques no són recomanables per a un consum freqüent. Prioritza hidratació, alimentació equilibrada i descans reparador.</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="salses-tomati-ketchup" class="food-category accent-savory">
+        <header class="category-banner">
+          <div class="banner-copy">
+            <span class="eyebrow">Salses de tomàtiga i quètxup 🍅</span>
+            <h3>El sucre ocult del rebost</h3>
+            <p>Les salses preparades són pràctiques, però sovint dupliquen el sucre i el nombre d'ingredients respecte d'una salsa casolana.</p>
+            <ul class="key-points">
+              <li>Entre 8 i 12 ingredients, molts estabilitzants.</li>
+              <li>Fins a 22 g de sucre per 100 g en alguns quètxups.</li>
+              <li>La versió casolana té 5 ingredients i menys sal.</li>
+            </ul>
+          </div>
+        </header>
+        <div class="category-content">
+          <div class="table-wrapper">
+            <h4>Comparativa d'ingredients</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Producte</th>
+                  <th>Ingredients destacats</th>
+                  <th>Nombre d'ingredients</th>
+                  <th>Habituals a la cuina?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Heinz Ketchup</td>
+                  <td>Concentrat de tomàquet, vinagre d'alcohol, sucre, sal, espècies, aroma natural.</td>
+                  <td>11</td>
+                  <td>Gairebé tots excepte l'aroma concentrada; alt en sucre.</td>
+                </tr>
+                <tr>
+                  <td>Orlando Tomàquet Fregit</td>
+                  <td>Tomàquet, oli de gira-sol, sucre, sal, cebes, midó modificat.</td>
+                  <td>9</td>
+                  <td>Midó modificat i reguladors no són habituals a casa.</td>
+                </tr>
+                <tr>
+                  <td>Salsa casolana 3r ESO</td>
+                  <td>Tomàquet triturat, ceba, oli d'oliva verge extra, all, herbes mediterrànies.</td>
+                  <td>6</td>
+                  <td>Sí! Tots ingredients de rebost.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-wrapper">
+            <h4>Informació nutricional</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th rowspan="2">Producte</th>
+                  <th colspan="3">Per 100 g</th>
+                  <th colspan="3">Per porció habitual</th>
+                </tr>
+                <tr>
+                  <th>Energia</th>
+                  <th>Sucre</th>
+                  <th>Sal</th>
+                  <th>Mida de la porció</th>
+                  <th>Calories</th>
+                  <th>Sucre</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Heinz Ketchup</td>
+                  <td>112 kcal</td>
+                  <td>22 g</td>
+                  <td>1,8 g</td>
+                  <td>15 g (1 cullerada)</td>
+                  <td>17 kcal</td>
+                  <td>3,3 g</td>
+                </tr>
+                <tr>
+                  <td>Orlando Tomàquet Fregit</td>
+                  <td>98 kcal</td>
+                  <td>9 g</td>
+                  <td>0,9 g</td>
+                  <td>60 g (racó de plat)</td>
+                  <td>59 kcal</td>
+                  <td>5,4 g</td>
+                </tr>
+                <tr>
+                  <td>Salsa casolana 3r ESO</td>
+                  <td>65 kcal</td>
+                  <td>6 g</td>
+                  <td>0,5 g</td>
+                  <td>60 g</td>
+                  <td>39 kcal</td>
+                  <td>3,6 g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <details class="info-accordion">
+            <summary>Mapa conceptual de les salses de tomàtiga</summary>
+            <div class="concept-grid">
+              <div>
+                <h5>Base</h5>
+                <ul>
+                  <li>Tomàquet → antioxidant (licopè) que millora amb cocció.</li>
+                  <li>Oli → greix necessari per absorbir vitamines A, D, E, K.</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Afegits industrials</h5>
+                <ul>
+                  <li>Sucre → millora sabor però incrementa calories.</li>
+                  <li>Midó → espesseix i dona textura uniforme.</li>
+                  <li>Reguladors d'acidesa → allarguen caducitat.</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Estratègies saludables</h5>
+                <ul>
+                  <li>Cuinar a foc lent amb herbes aromàtiques.</li>
+                  <li>Utilitzar oli d'oliva verge i evitar sucre afegit.</li>
+                  <li>Preparar i congelar en porcions per tenir opcions ràpides.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <div class="reflection-box">
+            <h4>Preguntes per reflexionar</h4>
+            <ul>
+              <li>Quina diferència hi ha entre llegir «midó modificat» i veure el producte a la cuina?</li>
+              <li>Quant sucre afegit menjaries en un menú amb patates fregides i quètxup?</li>
+              <li>Pots preparar una versió ràpida amb ingredients frescos a casa?</li>
+            </ul>
+            <p class="conclusion">Conclusió: millor optar per salses casolanes o versions amb menys sucre i oli de qualitat. Llegir l'etiqueta és clau.</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="sucs-envasats" class="food-category accent-juicy">
+        <header class="category-banner">
+          <div class="banner-copy">
+            <span class="eyebrow">Sucs envasats 🧃</span>
+            <h3>Són el mateix que una peça de fruita?</h3>
+            <p>Els sucs comercials poden ser «100% fruita» però sovint perden fibra i concentren sucres. Fixa't en les racions.</p>
+            <ul class="key-points">
+              <li>Sense fibra significa absorció ràpida del sucre.</li>
+              <li>Els brics grans contenen diverses racions.</li>
+              <li>Hi ha diferències entre nèctar, suc a base de concentrat i suc directe.</li>
+            </ul>
+          </div>
+        </header>
+        <div class="category-content">
+          <div class="table-wrapper">
+            <h4>Ingredients i processat</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Producte</th>
+                  <th>Tipus</th>
+                  <th>Ingredients clau</th>
+                  <th>Nombre d'ingredients</th>
+                  <th>Habituals a la cuina?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Granini Taronja</td>
+                  <td>Suc a base de concentrat</td>
+                  <td>Suc de taronja (reconstituït), polpa, aroma natural, vitamina C.</td>
+                  <td>5</td>
+                  <td>Sí, però cal un procés industrial per concentrar i rehidratar.</td>
+                </tr>
+                <tr>
+                  <td>Minute Maid Multifruites</td>
+                  <td>Nèctar 50%</td>
+                  <td>Aigua, purés de fruita (poma, raïm, taronja), sucre, aroma, vitamina C.</td>
+                  <td>8</td>
+                  <td>Parcialment: el sucre afegit no vindria d'una fruita sencera.</td>
+                </tr>
+                <tr>
+                  <td>Juver 100% Taronja</td>
+                  <td>Suc directe</td>
+                  <td>Suc de taronja pasteuritzat, vitamina C.</td>
+                  <td>2</td>
+                  <td>Sí, tot i que la pasteurització és industrial.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-wrapper">
+            <h4>Taula nutricional comparativa</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th rowspan="2">Producte</th>
+                  <th colspan="2">Per 100 ml</th>
+                  <th colspan="3">Per envàs</th>
+                </tr>
+                <tr>
+                  <th>Energia</th>
+                  <th>Sucre</th>
+                  <th>Format</th>
+                  <th>Calories</th>
+                  <th>Equivalència fruita</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Granini Taronja</td>
+                  <td>48 kcal</td>
+                  <td>10,8 g</td>
+                  <td>Ampolla 1 l</td>
+                  <td>480 kcal</td>
+                  <td>≈10 taronges mitjanes</td>
+                </tr>
+                <tr>
+                  <td>Minute Maid Multifruites</td>
+                  <td>56 kcal</td>
+                  <td>12,6 g</td>
+                  <td>Brik 330 ml</td>
+                  <td>185 kcal</td>
+                  <td>≈3 peces de fruita sense fibra</td>
+                </tr>
+                <tr>
+                  <td>Juver 100% Taronja</td>
+                  <td>42 kcal</td>
+                  <td>8,8 g</td>
+                  <td>Brik 200 ml</td>
+                  <td>84 kcal</td>
+                  <td>≈2 taronges</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <details class="info-accordion">
+            <summary>Mapa conceptual dels sucs</summary>
+            <div class="concept-grid">
+              <div>
+                <h5>Procés industrial</h5>
+                <ul>
+                  <li>Recol·lecció → Premsat → Filtrat → Pasteurització → Envasat.</li>
+                  <li>En el nèctar s'afegeix aigua i sucre per ajustar sabor.</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Comparació amb fruita sencera</h5>
+                <ul>
+                  <li>Sense fibra: absorció ràpida de sucres i menys sacietat.</li>
+                  <li>Vitamines sensibles a la llum i al temps d'emmagatzematge.</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Opcions saludables</h5>
+                <ul>
+                  <li>Menjar fruita sencera i acompanyar amb aigua.</li>
+                  <li>Preparar smoothies amb fruita + verdura + fruits secs.</li>
+                  <li>Limitar els sucs comercials a ocasions puntuals.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <div class="reflection-box">
+            <h4>Preguntes per reflexionar</h4>
+            <ul>
+              <li>Quantes peces de fruita substitueix un sol bric de suc?</li>
+              <li>Et sacia igual un suc que una fruita sencera?</li>
+              <li>Quines opcions podries portar a l'institut per hidratar-te millor?</li>
+            </ul>
+            <p class="conclusion">Conclusió: els sucs envasats són una opció ocasional. Prioritza l'aigua i la fruita sencera per aprofitar fibra i vitamines.</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="iogurts-postres" class="food-category accent-dairy">
+        <header class="category-banner">
+          <div class="banner-copy">
+            <span class="eyebrow">Iogurts i postres lactis 🥛</span>
+            <h3>Proteïna, calci... i també sucre?</h3>
+            <p>Els iogurts poden ser un gran aliat si revisem el contingut de sucre i el tipus de lacti. Observa les diferències entre opcions pensades per infants i varietats naturals.</p>
+            <ul class="key-points">
+              <li>Els iogurts infantils doblen el sucre d'un natural.</li>
+              <li>El bifidus afegeix probiòtics però pot contenir sucres afegits.</li>
+              <li>Els postres lactis sovint incorporen nata i midons.</li>
+            </ul>
+          </div>
+        </header>
+        <div class="category-content">
+          <div class="product-gallery">
+            <figure>
+              <img src="assets/images/aliments/danonino.svg" alt="Pack Danonino maduixa plàtan">
+              <figcaption>Danonino maduixa + plàtan</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/aliments/iogurt-fresa.svg" alt="Pack iogurt sabor maduixa">
+              <figcaption>Iogurt sabor maduixa</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/aliments/iogurt-bifidus.svg" alt="Pack iogurt bífidus maduixa">
+              <figcaption>Iogurt bífidus maduixa</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/aliments/la-lechera-galleta.svg" alt="Postres La Lechera galeta Maria">
+              <figcaption>Postres La Lechera galeta Maria</figcaption>
+            </figure>
+          </div>
+
+          <div class="table-wrapper">
+            <h4>Ingredients analitzats</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Producte</th>
+                  <th>Ingredients clau</th>
+                  <th>Nombre d'ingredients</th>
+                  <th>Habituals a la cuina?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Danonino maduixa</td>
+                  <td>Llet parcialment desnatada, sucre, puré de fruita (6%), midó, sucs concentrats, aromes, vitamines.</td>
+                  <td>15</td>
+                  <td>Molts afegits (colorants, aromes) que no tenim a casa.</td>
+                </tr>
+                <tr>
+                  <td>Iogurt sabor maduixa</td>
+                  <td>Llet, sucre, maduixa (8%), preparat de fruita, ferments làctics.</td>
+                  <td>9</td>
+                  <td>La base sí, però el preparat aporta colorants i aromes.</td>
+                </tr>
+                <tr>
+                  <td>Iogurt bífidus</td>
+                  <td>Llet, sucre, fruita (6%), bífidobacteris, gelificants (pectina).</td>
+                  <td>10</td>
+                  <td>Gairebé tots menys els gelificants i estabilitzants.</td>
+                </tr>
+                <tr>
+                  <td>Postres La Lechera</td>
+                  <td>Llet, nata, sucre, galeta triturada, midó, aroma.</td>
+                  <td>12</td>
+                  <td>La nata i el midó poden ser casolans, però porta molts sucres.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-wrapper">
+            <h4>Informació nutricional</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th rowspan="2">Producte</th>
+                  <th colspan="3">Per 100 g</th>
+                  <th colspan="3">Per ració</th>
+                </tr>
+                <tr>
+                  <th>Energia</th>
+                  <th>Sucre</th>
+                  <th>Proteïna</th>
+                  <th>Format</th>
+                  <th>Calories</th>
+                  <th>Sucre</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Danonino</td>
+                  <td>90 kcal</td>
+                  <td>12 g</td>
+                  <td>3,6 g</td>
+                  <td>2 x 50 g</td>
+                  <td>90 kcal</td>
+                  <td>12 g</td>
+                </tr>
+                <tr>
+                  <td>Iogurt sabor maduixa</td>
+                  <td>83 kcal</td>
+                  <td>12 g</td>
+                  <td>4 g</td>
+                  <td>125 g</td>
+                  <td>104 kcal</td>
+                  <td>15 g</td>
+                </tr>
+                <tr>
+                  <td>Iogurt bífidus</td>
+                  <td>75 kcal</td>
+                  <td>9 g</td>
+                  <td>4,5 g</td>
+                  <td>125 g</td>
+                  <td>94 kcal</td>
+                  <td>11 g</td>
+                </tr>
+                <tr>
+                  <td>Postres La Lechera</td>
+                  <td>124 kcal</td>
+                  <td>15 g</td>
+                  <td>3 g</td>
+                  <td>4 x 120 g</td>
+                  <td>149 kcal</td>
+                  <td>18 g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <details class="info-accordion">
+            <summary>Mapa conceptual dels lactis</summary>
+            <div class="concept-grid">
+              <div>
+                <h5>La base</h5>
+                <ul>
+                  <li>Llet + ferments → iogurt natural (proteïna + calci).</li>
+                  <li>Ferments bífidus → milloren flora intestinal.</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Afegits habituals</h5>
+                <ul>
+                  <li>Sucre, xarops, midons → textura i sabor dolç.</li>
+                  <li>Aromes i colorants → atractiu per al públic jove.</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Tria intel·ligent</h5>
+                <ul>
+                  <li>Opta per iogurts naturals i afegeix-hi fruita fresca.</li>
+                  <li>Limita els postres lactis a ocasions especials.</li>
+                  <li>Compara etiquetes: menys ingredients = més clar.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <div class="reflection-box">
+            <h4>Preguntes i conclusions</h4>
+            <ul>
+              <li>Quin iogurt menjaries cada dia si vols reduir el sucre?</li>
+              <li>Com pots enriquir un iogurt natural perquè sigui igual d'atractiu?</li>
+              <li>Què diferència un iogurt d'un postre lacti?</li>
+            </ul>
+            <p class="conclusion">Conclusió: prioritza iogurts naturals o bífidus sense sucre afegit i reserva els postres lactis per moments puntuals.</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="xocolates" class="food-category accent-choco">
+        <header class="category-banner">
+          <div class="banner-copy">
+            <span class="eyebrow">Xocolates i cacau 🍫</span>
+            <h3>Del blanc al 99% de cacau</h3>
+            <p>El percentatge de cacau ens indica la proporció de pasta de cacau i mantega respecte del sucre. A més cacau, menys sucre i més antioxidants.</p>
+            <ul class="key-points">
+              <li>La xocolata blanca no porta cacau sòlid.</li>
+              <li>El cacau negre té menys sucre però gust més intens.</li>
+              <li>Cal fixar-se en el tipus de greix utilitzat.</li>
+            </ul>
+          </div>
+        </header>
+        <div class="category-content">
+          <div class="product-gallery">
+            <figure>
+              <img src="assets/images/aliments/milkybar.svg" alt="Tauleta Milkybar">
+              <figcaption>Milkybar - xocolata blanca</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/aliments/nestle-extrafino.svg" alt="Tauleta Nestlé Extrafino">
+              <figcaption>Nestlé Extrafino - llet</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/aliments/lindt-70.svg" alt="Tauleta Lindt 70% cacau">
+              <figcaption>Lindt 70% cacau</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/aliments/lindt-85.svg" alt="Tauleta Lindt 85% cacau">
+              <figcaption>Lindt 85% cacau</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/aliments/lindt-99.svg" alt="Tauleta Lindt 99% cacau">
+              <figcaption>Lindt 99% cacau</figcaption>
+            </figure>
+          </div>
+
+          <div class="table-wrapper">
+            <h4>Ingredients principals</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Producte</th>
+                  <th>Ingredients</th>
+                  <th>Nombre d'ingredients</th>
+                  <th>Greix utilitzat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Milkybar</td>
+                  <td>Sucre, mantega de cacau, llet en pols, oli vegetal, aromes.</td>
+                  <td>8</td>
+                  <td>Mantega de cacau + oli de palma</td>
+                </tr>
+                <tr>
+                  <td>Nestlé Extrafino</td>
+                  <td>Sucre, llet, mantega de cacau, pasta de cacau, emulgents.</td>
+                  <td>7</td>
+                  <td>Mantega de cacau</td>
+                </tr>
+                <tr>
+                  <td>Lindt 70% cacau</td>
+                  <td>Pasta de cacau, sucre, mantega de cacau, vainilla natural.</td>
+                  <td>4</td>
+                  <td>Mantega de cacau</td>
+                </tr>
+                <tr>
+                  <td>Lindt 85% cacau</td>
+                  <td>Pasta de cacau, mantega de cacau, sucre, vainilla.</td>
+                  <td>4</td>
+                  <td>Mantega de cacau</td>
+                </tr>
+                <tr>
+                  <td>Lindt 99% cacau</td>
+                  <td>Pasta de cacau, mantega de cacau, sucre (1%), vainilla.</td>
+                  <td>4</td>
+                  <td>Mantega de cacau</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-wrapper">
+            <h4>Taula nutricional</h4>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th rowspan="2">Producte</th>
+                  <th colspan="3">Per 100 g</th>
+                  <th colspan="3">Per ració (4 quadradets ≈ 20 g)</th>
+                </tr>
+                <tr>
+                  <th>Energia</th>
+                  <th>Sucre</th>
+                  <th>Greix</th>
+                  <th>Calories</th>
+                  <th>Sucre</th>
+                  <th>Greix</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Milkybar</td>
+                  <td>560 kcal</td>
+                  <td>59 g</td>
+                  <td>34 g</td>
+                  <td>112 kcal</td>
+                  <td>11,8 g</td>
+                  <td>6,8 g</td>
+                </tr>
+                <tr>
+                  <td>Nestlé Extrafino</td>
+                  <td>530 kcal</td>
+                  <td>55 g</td>
+                  <td>30 g</td>
+                  <td>106 kcal</td>
+                  <td>11 g</td>
+                  <td>6 g</td>
+                </tr>
+                <tr>
+                  <td>Lindt 70%</td>
+                  <td>560 kcal</td>
+                  <td>34 g</td>
+                  <td>41 g</td>
+                  <td>112 kcal</td>
+                  <td>6,8 g</td>
+                  <td>8,2 g</td>
+                </tr>
+                <tr>
+                  <td>Lindt 85%</td>
+                  <td>570 kcal</td>
+                  <td>19 g</td>
+                  <td>46 g</td>
+                  <td>114 kcal</td>
+                  <td>3,8 g</td>
+                  <td>9,2 g</td>
+                </tr>
+                <tr>
+                  <td>Lindt 99%</td>
+                  <td>590 kcal</td>
+                  <td>8 g</td>
+                  <td>54 g</td>
+                  <td>118 kcal</td>
+                  <td>1,6 g</td>
+                  <td>10,8 g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <details class="info-accordion">
+            <summary>Mapa conceptual del cacau</summary>
+            <div class="concept-grid">
+              <div>
+                <h5>Ingredients base</h5>
+                <ul>
+                  <li>Pasta de cacau → aporta flavonoides antioxidants.</li>
+                  <li>Mantega de cacau → greix saludable però cal controlar quantitat.</li>
+                  <li>Sucre → equilibra el sabor amarg del cacau.</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Tipus de xocolata</h5>
+                <ul>
+                  <li>Blanca → mantega de cacau + sucre + llet (sense cacau sòlid).</li>
+                  <li>Amb llet → cacau + llet + sucre (gust suau).</li>
+                  <li>Negra → alt percentatge de cacau, menys sucre.</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Consum responsable</h5>
+                <ul>
+                  <li>Porcions petites i combinades amb fruita seca.</li>
+                  <li>Escollir cacau mínim 70% per obtenir beneficis.</li>
+                  <li>Atenció a les greixos hidrogenades o oli de palma.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+
+          <div class="reflection-box">
+            <h4>Preguntes i conclusions</h4>
+            <ul>
+              <li>Quina diferència notes entre menjar xocolata blanca i 85% cacau?</li>
+              <li>Quina ració consideres adequada com a berenar?</li>
+              <li>Per què és important revisar el tipus de greix?</li>
+            </ul>
+            <p class="conclusion">Conclusió: com més percentatge de cacau, menys sucre i més beneficis. Gaudeix de la xocolata en quantitats petites i triant greixos de qualitat.</p>
+          </div>
+        </div>
+      </article>
+
+      <article id="conclusions-generals" class="food-category accent-conclusions">
+        <header class="category-banner">
+          <div class="banner-copy">
+            <span class="eyebrow">Conclusions generals 🧠</span>
+            <h3>Què hem après amb la investigació?</h3>
+            <p>Les dades recollides ens ajuden a prendre decisions informades quan triem begudes, salses, sucs, lactis i xocolates. Aquí tens la síntesi del nostre equip de 3r d'ESO.</p>
+          </div>
+        </header>
+        <div class="category-content conclusions-grid">
+          <div class="conclusion-card">
+            <h4>1. Etiquetes transparents</h4>
+            <p>Quan la llista d'ingredients és curta i entenedora, el producte sol ser més natural. Els aliments ultraprocessats comparteixen additius difícils de trobar a una cuina.</p>
+            <ul>
+              <li>Busca menys de 5-6 ingredients per producte.</li>
+              <li>Evita sucres amb noms diferents (glucosa, xarop, maltodextrina...).</li>
+            </ul>
+          </div>
+          <div class="conclusion-card">
+            <h4>2. El sucre està amagat</h4>
+            <p>Begudes energètiques, salses i iogurts infantils aporten quantitats de sucre similars a un refresc. Cal llegir la informació nutricional per ració, no només per 100 g.</p>
+            <ul>
+              <li>Comparem sempre el format complet.</li>
+              <li>Preferim aigua, fruita sencera i iogurts naturals.</li>
+            </ul>
+          </div>
+          <div class="conclusion-card">
+            <h4>3. Consum responsable</h4>
+            <p>Cap producte és prohibit, però cal decidir quan i com prendre'l. Les nostres preguntes guia ajuden a ser crítics i a equilibrar la dieta.</p>
+            <ul>
+              <li>Planifica racions i comparteix les opcions més calòriques.</li>
+              <li>Reserva els ultraprocessats per ocasions especials.</li>
+            </ul>
+          </div>
+          <div class="conclusion-card">
+            <h4>4. Preguntes obertes</h4>
+            <p>Quins productes t'agradaria investigar ara? Et proposem un repte: crea la teva pròpia fitxa analitzant cereals d'esmorzar o snacks salats!</p>
+            <ul>
+              <li>Identifica ingredients, nutrients i racions.</li>
+              <li>Proposa alternatives més saludables.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
     </section>
 
     <section class="nutrients-section" aria-labelledby="nutricionista-title">

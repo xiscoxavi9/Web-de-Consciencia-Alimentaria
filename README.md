@@ -5,7 +5,8 @@ Aquest projecte presenta una web moderna i vibrant pensada per a l'alumnat de 3r
 ## Continguts
 - **Pàgina d'inici** amb hero animat, accés ràpid a les sales i targetes per a cada nutrient.
 - **Sala de Nutrients** amb subpàgines dedicades a: hidrats de carboni, lípids, proteïnes, vitamines, minerals i aigua.
-- **Sales en construcció** (Anàlisi, Aliments i Nutricionista) amb placeholders visuals.
+- **Sala d'Aliments** amb comparatives d'ingredients i informació nutricional de begudes energètiques, salses, sucs, iogurts i xocolates, mapes conceptuals i galeria d'imatges pròpies.
+- **Sales en construcció** (Anàlisi i Nutricionista) amb placeholders visuals.
 
 ## Estructura
 ```
@@ -19,6 +20,7 @@ nutrients/
   └─ aigua.html
 assets/
   ├─ css/style.css
+  ├─ images/aliments/*.svg
   └─ js/main.js
 ```
 

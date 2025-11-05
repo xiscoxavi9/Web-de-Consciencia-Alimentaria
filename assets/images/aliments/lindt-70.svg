@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#1f1410" rx="80"/>
+  <rect x="100" y="120" width="1000" height="460" rx="40" fill="#2c1d15" stroke="#c68c3b" stroke-width="18"/>
+  <text x="160" y="290" font-family="'Poppins', sans-serif" font-size="92" font-weight="700" fill="#f2c078">Lindt Excellence</text>
+  <text x="160" y="370" font-family="'Poppins', sans-serif" font-size="60" font-weight="500" fill="#d9b66f">70% cacau intens</text>
+  <circle cx="980" cy="220" r="115" fill="#c68c3b"/>
+  <text x="980" y="205" font-family="'Poppins', sans-serif" font-size="44" font-weight="700" fill="#1f1410" text-anchor="middle">Dark</text>
+  <text x="980" y="250" font-family="'Poppins', sans-serif" font-size="36" font-weight="600" fill="#1f1410" text-anchor="middle">Balance</text>
+</svg>

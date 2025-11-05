@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     threshold: 0.12
   });
 
-  document.querySelectorAll('.card, .nutrient-card, .highlight-box, .tip-box').forEach(el => {
+  document.querySelectorAll('.card, .nutrient-card, .highlight-box, .tip-box, .food-category, .product-gallery figure, .conclusion-card').forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
   });

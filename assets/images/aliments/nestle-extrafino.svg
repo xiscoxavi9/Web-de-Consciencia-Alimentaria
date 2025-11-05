@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#8c0f1a" rx="70"/>
+  <rect x="70" y="90" width="1060" height="520" rx="50" fill="#fff" opacity="0.12" stroke="#ffeaea" stroke-width="20"/>
+  <text x="140" y="280" font-family="'Poppins', sans-serif" font-size="100" font-weight="700" fill="#ffffff">Nestlé Extrafino</text>
+  <text x="140" y="370" font-family="'Poppins', sans-serif" font-size="58" font-weight="500" fill="#ffd7d7">Xocolata amb llet cremosa</text>
+  <circle cx="1000" cy="210" r="110" fill="#ffffff" opacity="0.85"/>
+  <text x="1000" y="190" font-family="'Poppins', sans-serif" font-size="46" font-weight="700" fill="#8c0f1a" text-anchor="middle">Nutri</text>
+  <text x="1000" y="240" font-family="'Poppins', sans-serif" font-size="46" font-weight="700" fill="#8c0f1a" text-anchor="middle">Focus</text>
+</svg>
