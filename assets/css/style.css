@@ -923,6 +923,56 @@ th {
   color: rgba(27, 73, 101, 0.85);
 }
 
+.concept-map__block {
+  background: rgba(236, 252, 247, 0.9);
+  border-left: 5px solid rgba(31, 191, 184, 0.6);
+  border-radius: calc(var(--card-radius) - 6px);
+  padding: 1rem 1.1rem 1.1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.concept-map__block::after {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle at center, rgba(31, 191, 184, 0.15) 0%, rgba(31, 191, 184, 0) 70%);
+  pointer-events: none;
+}
+
+.concept-map__block p {
+  color: rgba(27, 73, 101, 0.88);
+  margin-bottom: 0.6rem;
+}
+
+.concept-map__block ul {
+  margin-left: 1.1rem;
+}
+
+.concept-map__diagram {
+  grid-column: 1 / -1;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--card-radius);
+  padding: 1.4rem 1.6rem 1.1rem;
+  box-shadow: inset 0 0 0 1px rgba(27, 73, 101, 0.06);
+}
+
+.concept-map__diagram svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.concept-map__diagram figcaption {
+  margin-top: 0.8rem;
+  color: rgba(27, 73, 101, 0.78);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .responsive-video {
   position: relative;
   padding-top: 56.25%;
