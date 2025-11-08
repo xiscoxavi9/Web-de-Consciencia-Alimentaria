@@ -30,3 +30,22 @@ assets/
 3. Navega per les sales des del menú superior o les targetes destacades.
 
 El disseny és responsive i funciona tant en escriptori com en dispositius mòbils.
+
+### Visualització amb un servidor local
+Si prefereixes treballar amb un servidor local (per exemple, per provar rutes relatives o evitar restriccions de seguretat del navegador), pots utilitzar Python:
+
+```bash
+python3 -m http.server 8000
+```
+
+Tot seguit, obre `http://localhost:8000` al navegador i accedeix al projecte.
+
+## Publicar a GitHub Pages
+1. Puja els canvis al repositori de GitHub.
+2. A GitHub, ves a **Settings → Pages**.
+3. A l'apartat **Build and deployment**, selecciona **Deploy from a branch**.
+4. Tria la branca amb el contingut (habitualment `main` o `gh-pages`) i la carpeta `/ (root)`.
+5. Desa la configuració; GitHub generarà automàticament la web. El procés pot trigar uns minuts.
+6. Quan l'estat indiqui "Published", fes servir l'URL indicat (per exemple, `https://<usuari>.github.io/<repositori>/`) per veure la versió actualitzada.
+
+Per refrescar el contingut després de fer nous canvis, només cal tornar a pujar-los a la branca seleccionada; GitHub Pages redeployarà el lloc de forma automàtica.
